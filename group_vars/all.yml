@@ -1,0 +1,39 @@
+mvn_install: false
+
+#Nodejs version
+nodejs_version: "16.x"
+
+#Oracle version
+oracle_java_file: jdk-8u291-linux-x64.tar.gz
+ora_version: 1.8.0_291
+
+#Supervisor variables
+supervisor_bin_path: /usr/local/bin/supervisord
+supervisorctl_bin_path: /usr/local/bin/supervisorctl
+supervisor_config_path: /etc/supervisor
+supervisor_log_dir: /var/log/supervisor
+supervisor_user: root
+supervisor_password: my_secret_password
+# Install a specific version of Supervisor by setting it here (e.g. '3.3.1').
+supervisor_version: ''
+
+supervisor_started: true
+supervisor_enabled: true
+
+#Supervisor programs
+supervisor_programs: []
+#  - name: 'nginx'
+#    command: /usr/sbin/nginx -g "daemon off;"
+#    state: present
+#    configuration: |
+#      autostart=true
+#      autorestart=true
+#      startretries=1
+#      startsecs=1
+#      redirect_stderr=true
+#      stderr_logfile=/var/log/nginx-err.log
+#      stdout_logfile=/var/log/nginx-out.log
+#      user=root
+#      killasgroup=true
+#      stopasgroup=true
+

@@ -1,0 +1,9 @@
+---
+#- This Playbook is to Copy Files/Repo
+
+- copy:
+    src: files/sample.repo
+    dest: /etc/yum.repos.d
+    owner: root
+    group: root
+    mode: '0644'

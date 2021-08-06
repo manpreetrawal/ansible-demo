@@ -1,0 +1,9 @@
+---
+#- This Playbook is to install packages on Centos
+
+- name: Install Telnet
+  package: name=telnet state=present
+
+- name: Install Elinks
+  package: name=elinks state=present
+

@@ -1,0 +1,11 @@
+[all:vars]
+ansible_connection=ssh
+#ansible_user=root
+ansible_ssh_pass=msingh
+ansible_user=msingh
+pip_executable=pip3
+ansible_python.version.major == 3
+ansible_python_interpreter=/usr/bin/python
+
+[centos]
+18.221.132.174
