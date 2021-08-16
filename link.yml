@@ -31,3 +31,17 @@
     - repo
   tags: [ "repo" ]
 
+- hosts: centos
+  gather_facts: yes
+  roles:
+    - redis
+  tags: [ "redis" ]
+  become: true
+- hosts: centos
+  gather_facts: yes
+  vars_files:
+    - vars/main.yml
+  roles:
+    - nodejs
+  tags: [ "nodejs" ]
+  become: true
